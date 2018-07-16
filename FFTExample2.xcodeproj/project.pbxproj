@@ -14,6 +14,9 @@
 		707C7C9520FD46D400BB3C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707C7C9320FD46D400BB3C18 /* LaunchScreen.storyboard */; };
 		707C7CA020FD46D400BB3C18 /* FFTExample2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707C7C9F20FD46D400BB3C18 /* FFTExample2Tests.swift */; };
 		707C7CAB20FD46D400BB3C18 /* FFTExample2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707C7CAA20FD46D400BB3C18 /* FFTExample2UITests.swift */; };
+		707C7CB920FD643400BB3C18 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707C7CB820FD643400BB3C18 /* Charts.framework */; };
+		707C7CBA20FD643400BB3C18 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 707C7CB820FD643400BB3C18 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		707C7CBD20FD646400BB3C18 /* GenerateSin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707C7CBC20FD646400BB3C18 /* GenerateSin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		707C7CBB20FD643400BB3C18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				707C7CBA20FD643400BB3C18 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		707C7C8720FD46D300BB3C18 /* FFTExample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFTExample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		707C7C8A20FD46D300BB3C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +64,8 @@
 		707C7CA620FD46D400BB3C18 /* FFTExample2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFTExample2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		707C7CAA20FD46D400BB3C18 /* FFTExample2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTExample2UITests.swift; sourceTree = "<group>"; };
 		707C7CAC20FD46D400BB3C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707C7CB820FD643400BB3C18 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		707C7CBC20FD646400BB3C18 /* GenerateSin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707C7CB920FD643400BB3C18 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +97,7 @@
 		707C7C7E20FD46D300BB3C18 = {
 			isa = PBXGroup;
 			children = (
+				707C7CB820FD643400BB3C18 /* Charts.framework */,
 				707C7C8920FD46D300BB3C18 /* FFTExample2 */,
 				707C7C9E20FD46D400BB3C18 /* FFTExample2Tests */,
 				707C7CA920FD46D400BB3C18 /* FFTExample2UITests */,
@@ -99,6 +120,7 @@
 			children = (
 				707C7C8A20FD46D300BB3C18 /* AppDelegate.swift */,
 				707C7C8C20FD46D300BB3C18 /* ViewController.swift */,
+				707C7CBC20FD646400BB3C18 /* GenerateSin.swift */,
 				707C7C8E20FD46D300BB3C18 /* Main.storyboard */,
 				707C7C9120FD46D400BB3C18 /* Assets.xcassets */,
 				707C7C9320FD46D400BB3C18 /* LaunchScreen.storyboard */,
@@ -135,6 +157,7 @@
 				707C7C8320FD46D300BB3C18 /* Sources */,
 				707C7C8420FD46D300BB3C18 /* Frameworks */,
 				707C7C8520FD46D300BB3C18 /* Resources */,
+				707C7CBB20FD643400BB3C18 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				707C7C8D20FD46D300BB3C18 /* ViewController.swift in Sources */,
+				707C7CBD20FD646400BB3C18 /* GenerateSin.swift in Sources */,
 				707C7C8B20FD46D300BB3C18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +456,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4JADE2386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FFTExample2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +478,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4JADE2386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FFTExample2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
